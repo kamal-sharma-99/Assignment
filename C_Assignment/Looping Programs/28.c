@@ -11,6 +11,7 @@ int main(){
     for (int i = 2; i < len+2; i++){
         if (i%2==0){
             num3 = num1+num2;
+            num2 = num3;
             printf("%d ",num3);
             
         }

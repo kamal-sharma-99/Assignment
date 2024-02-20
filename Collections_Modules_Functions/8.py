@@ -1,0 +1,1 @@
+# Q.8)_ Write a Python program to check a list is empty or not.

@@ -1,3 +1,0 @@
-# Q.3)_ Differentiate between append () and extend () methods?
-# append is use to add single value in list
-# extend is use to input multiple value in list....

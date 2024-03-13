@@ -67,15 +67,15 @@ VALUES
 
 Task 1)
 
-SELECT 
-    C.country_name_eng AS CountryName,
-    COALESCE(City.city_name, 'N/A') AS CityName,
-    COALESCE(Customer.customer_name, 'N/A') AS CustomerName
-FROM 
-    Country C
-LEFT JOIN 
+SELECT
+    Country.country_name_eng AS CountryName,
+    City.city_name AS CityName,
+    Customer.customer_name AS CustomerName
+FROM
+    Country
+LEFT JOIN
     City ON C.id = City.country_id
-LEFT JOIN 
+LEFT JOIN
     Customer ON City.id = Customer.city_id
 ORDER BY 
     C.id, City.id, Customer.id;
@@ -84,16 +84,16 @@ ORDER BY
 Task 2)
 
 SELECT 
-    C.country_name_eng AS CountryName,
+    Country.country_name_eng AS CountryName,
     City.city_name AS CityName,
-    COALESCE(Customer.customer_name, 'N/A') AS CustomerName
-FROM 
-    Country C
+    Customer.customer_name AS CustomerName
+FROM
+    Country
 INNER JOIN 
     City ON C.id = City.country_id
-LEFT JOIN 
+LEFT JOIN
     Customer ON City.id = Customer.city_id
-ORDER BY 
+ORDER BY
     C.id, City.id, Customer.id;
 
 

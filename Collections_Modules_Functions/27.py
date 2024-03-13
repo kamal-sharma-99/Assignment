@@ -1,6 +1,6 @@
 # Write a Python program to find the repeated items of a tuple.
 
-tup = (23,45,67,89,45,89,78,23,89)
+tup = (23,45,89,89,78,89)
 l1=[]
 l2=[]
 for i in tup:
